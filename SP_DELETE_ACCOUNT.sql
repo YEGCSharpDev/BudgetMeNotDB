@@ -11,8 +11,8 @@ GO
 -- Description:	<Delete an Account>
 -- =============================================
 CREATE PROCEDURE dbo.SP_DELETE_ACCOUNT 
-	 @ACCOUNT_ID INT = NULL
-	,@SOFT_DELETED NVARCHAR(1) = NULL
+	 @ACCOUNT_ID INT 
+	,@SOFT_DELETED NVARCHAR(1) 
 AS
 BEGIN
 	SET NOCOUNT ON

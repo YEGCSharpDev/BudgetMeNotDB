@@ -13,9 +13,9 @@ GO
 -- Description:	<Soft Delets a Category Sub Group>
 -- =============================================
 CREATE PROCEDURE dbo.SP_DELETE_CATEGORY_SUB_GROUP 
-     @SUB_CATEGORY_ID INT = NULL
-     ,@SOFT_DELETED NVARCHAR(1) = NULL
-	,@UPDATE_TS DATETIME = NULL
+     @SUB_CATEGORY_ID INT 
+     ,@SOFT_DELETED NVARCHAR(1) 
+	,@UPDATE_TS DATETIME 
 AS
 BEGIN
 	SET NOCOUNT ON

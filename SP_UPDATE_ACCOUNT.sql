@@ -11,9 +11,9 @@ GO
 -- Description:	<Updates an Account>
 -- =============================================
 CREATE PROCEDURE dbo.SP_UPDATE_ACCOUNT 
-	 @ACCOUNT_ID INT = NULL
-	,@ACCOUNT_TYPE_ID INT = NULL
-	,@UPDATE_TS DATETIME = NULL
+	 @ACCOUNT_ID INT 
+	,@ACCOUNT_TYPE_ID INT 
+	,@UPDATE_TS DATETIME 
 AS
 BEGIN
 	SET NOCOUNT ON

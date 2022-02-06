@@ -10,11 +10,12 @@ GO
 -- Create date: <29-01-2022>
 -- Description:	<Inserts an Account>
 -- =============================================
+
 CREATE PROCEDURE dbo.SP_ADD_ACCOUNT 
-	 @ACCOUNT_ID INT = NULL
-	,@ACCOUNT_TYPE_ID INT = NULL
-	,@CREATE_TS DATETIME = NULL
-	,@UPDATE_TS DATETIME = NULL
+	 @ACCOUNT_ID INT 
+	,@ACCOUNT_TYPE_ID INT 
+	,@CREATE_TS DATETIME 
+	,@UPDATE_TS DATETIME 
 AS
 BEGIN
 	SET NOCOUNT ON

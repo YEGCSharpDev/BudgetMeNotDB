@@ -11,9 +11,9 @@ GO
 -- Description:	<Soft Deletes an Account Type>
 -- =============================================
 CREATE PROCEDURE dbo.SP_DELETE_ACCOUNT_TYPE
-	 @ACCOUNT_TYPE_ID INT = NULL
-	,@SOFT_DELETED NVARCHAR(1) = NULL
-	,@UPDATE_TS DATETIME = NULL
+	 @ACCOUNT_TYPE_ID INT 
+	,@SOFT_DELETED NVARCHAR(1) 
+	,@UPDATE_TS DATETIME 
 AS
 BEGIN
 	SET NOCOUNT ON
