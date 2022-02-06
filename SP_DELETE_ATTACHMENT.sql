@@ -11,8 +11,8 @@ GO
 -- Description:	<Deletes an Attachment>
 -- =============================================
 CREATE PROCEDURE dbo.SP_DELETE_ATTACHMENT 
-	 @ATTACHMENT_ID INT = NULL
-	 ,@SOFT_DELETED NVARCHAR(1) = NULL
+	 @ATTACHMENT_ID INT 
+	 ,@SOFT_DELETED NVARCHAR(1) 
 AS
 BEGIN
 	SET NOCOUNT ON

@@ -11,9 +11,9 @@ GO
 -- Description:	<Soft Deletes a Category>
 -- =============================================
 CREATE PROCEDURE dbo.SP_DELETE_CATEGORY 
-	 @CATEGORY_ID INT = NULL
-	,@SOFT_DELETED NVARCHAR(1) = NULL
-	,@UPDATE_TS DATETIME = NULL
+	 @CATEGORY_ID INT 
+	,@SOFT_DELETED NVARCHAR(1) 
+	,@UPDATE_TS DATETIME 
 AS
 BEGIN
 	SET NOCOUNT ON
